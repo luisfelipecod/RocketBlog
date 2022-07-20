@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin-inline: auto;
+    max-width: 116.9rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.container .col-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .col-2 div{
+    width: 57rem;
+}
+
+.container .col-3{
+   display:flex;
+   justify-content: center;
+   gap: 3rem;
+}
+
+#home{
+    padding-top: 6.4rem;
+
+    background-color: var(--purple-bg);
+    border-bottom: 0.6rem solid var(--green);
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    color:  var(--purple-bg);
+}
+
+span{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.875rem;
+}
+
+/***** Header *****/
+#home .container header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    width: 100%;
+    height: 4.4rem;
+}
+
+#home .container header #menuNavigation{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+#home .container header #menuNavigation a{
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.10rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+#home .container header #menuNavigation a:hover{
+    font-weight: 700;
+}
+
+#home .container header #menuNavigation a:hover::before{
+    position: absolute;
+    top:0;
+    left: -0.5rem;
+    content: ' ';
+    width: 0.2rem;
+    height: 100%;
+    background-color: var(--green);
+}
+
+#home .container header #searchFieldContainer{
+    height: 4.4rem;
+
+    display: flex;
+    align-items: stretch;
+}
+
+#home .container header #searchFieldContainer input{
+    width: 24rem;
+    padding-block: 1.4rem;
+    padding-left: 2.565rem;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.641rem;
+    color: var(--light-purple);
+
+
+    background-color: var(--dark-bg);
+    border: transparent;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+#home .container header #searchFieldContainer #searchButton{
+    width: 7rem;
+
+    background-color: var(--button-bg);
+
+    border: transparent;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    cursor: pointer;
+}
+
+#home .container header #mobileMenuIcons{
+    display: none;
+}
+
+/***** Home *****/
+
+#home .container main.col-2{
+    margin-top: 6.4rem;
+    padding-bottom: 6.9rem;
+}
+
+#home .container main.col-2 h1{
+    margin-bottom: 1.6rem;
+
+    font-size: 3.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 5.4rem;
+    color: var(--button-bg);
+}
+
+#home .container main.col-2 p{
+    display: inline-block;
+    max-width: 46.9rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    color: var(--light-purple);
+}
+
+#home .container main.col-2 a{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-top: 2.4rem;
+
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    color: var(--button-bg);
+    text-decoration: none;
+}
+
+/***** Content *****/
+
+#content p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+#content .container .col-2{
+    margin-top: 6rem;
+    padding-bottom: 6.38rem;
+}
+
+#content .container .col-2 #sidePostsContent{
+    max-width: 47.2rem;
+}
+
+#content .container .col-2 #sidePostsContent .sidePost{
+    width: 100%;
+    margin-bottom: 4.855rem;
+}
+
+#content .container .col-3{
+    padding-bottom: 6.758rem;
+}
+#content .container .col-3 .post{
+    width: 37rem;
+}
+
+/* Responsiveness */
+@media (max-width:1300px){
+
+    .col-2,
+    .col-3{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    h2{
+        font-size: 2.2rem;
+    }
+
+    span{
+        font-size: 1.2rem;
+    }
+
+    .container{
+        max-width: 110rem;
+        padding-inline: 3rem;
+    }
+    .container .col-2 div{
+        width: 47rem;
+    }
+
+    #home .container main.col-2 h1 {
+        font-size: 2.6rem;
+    }
+    .container .col-2 div img{
+        width: 100%;
+    }
+
+    #content .container .col-3 .post{
+        width: 30rem;
+        padding: initial;
+    }
+
+    #content .container .col-3 .post img{
+        width: 100%;
+    }
+}
+
+@media (max-width:1115px){
+    h2{
+        font-size: 2.4rem;
+    }
+
+    span{
+        font-size: 1.6rem;
+    }
+
+    .col-2,
+    .col-3{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .container .col-2 div{
+        margin-inline:auto;
+        width: 57rem;
+    }
+
+    #home .container header #searchFieldContainer #searchField{
+        width: 14rem;
+    }
+
+    .container .col-2 div:nth-child(2){
+        margin-top: 3rem;
+    }
+
+    #home .container main.col-2 h1 {
+        font-size: 3.6rem;
+    }
+
+    #home .container main.col-2 p{
+        max-width: initial;
+    }
+
+    #content .container .col-2 #sidePostsContent{
+        max-width: initial;
+    }
+
+    #content .container .col-3 .post{
+        width: 57rem;
+        padding: 5rem;  
+    }
+}
+
+@media (max-width:850px){
+
+    #home .container header #searchFieldContainer #searchField{
+        width: 20rem;
+    }
+
+    /* Visibility Mobile Menu */
+    #home .container header #menuNavigation{
+        display: none;
+    }
+
+    #home .container header #mobileMenuIcons{
+        display: block;
+    }
+
+    #home .container header #mobileMenuIcons{
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+    }
+    
+    #home .container header #mobileMenuIcons svg{
+        width: 2.4rem;
+        height: 2.4rem;
+        cursor: pointer;
+    }
+    
+    #home .container header #mobileMenuIcons #openButton{
+        display: block;
+    }
+    
+    #home .container header #mobileMenuIcons #closeButton{
+        display: none;
+    }
+    
+    #home .container header #mobileMenuIcons.iconMenuOpen{
+        flex-direction: row-reverse;
+    }
+    #home .container header #mobileMenuIcons.iconMenuOpen #openButton{
+        display: none;
+    }
+    
+    #home .container header #mobileMenuIcons.iconMenuOpen #closeButton{
+        display: block;
+    }
+
+    /*Style Mobile Menu*/
+    #home .container header #menuNavigation.menuOpen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6rem;
+
+        position: absolute;
+        top:-1rem;
+        left: 0;
+        width: 100%;
+        height:calc(100vh - 4.4rem);       
+        background-color: var(--purple-bg);
+    }
+    
+    #home .container header #menuNavigation.menuOpen a{
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 3rem;    
+        padding: .2rem;
+    }
+
+    #home .container header #mobileMenuIcons.iconMenuOpen #closeButton{
+        display: flex;
+        z-index: 1000;
+    }
+}
+
+@media (max-width:650px){
+
+
+    .container .col-2 div{
+        width: 42rem;
+    }
+
+    #content .container .col-3 .post{
+        width: 42rem;
+        padding: 0;
+    }
+}
+
+@media (max-width:550px){
+
+    .container .col-2 div{
+        width: 35rem;
+    }
+
+    #home .container header{
+        justify-content: flex-end;
+    }
+
+    #home .container header > #logo{
+        position: absolute;
+        left: 0;
+    }
+
+    #home .container header #searchFieldContainer #searchField {
+        position: absolute;
+        visibility: hidden;
+        top: 4.5rem;
+        left: 0;
+        width: 98%;
+        padding: 1.4rem;
+        opacity: 0;
+        transition: opacity 200ms ease-in;
+        border-radius: 4px;
+    }
+
+    #home .container header #searchFieldContainer #searchField.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #home .container header #searchFieldContainer #searchButton {
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #home .container header #searchFieldContainer #searchButton svg path{
+        stroke: var(--button-bg);
+    }
+    
+    #home .container main.col-2 h1 {
+        font-size: 3.0rem;
+    }
+    
+    #content .container .col-3 .post{
+        width: 32rem;
+        padding: 0;
+    }
+}
+
+
+
+
+
