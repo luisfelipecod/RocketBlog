@@ -178,6 +178,7 @@
     function openMenu() {
         mobileMenuIcons.classList.add('iconMenuOpen');
         menuNavigation.classList.add('menuOpen');
+        searchField.classList.remove('active');
     }
 
     function closeMenu() {
@@ -186,14 +187,9 @@
     }
 
     
-    let active = false; 
+
     function showSearchInput(){
-        if(active == false){
-            searchField.classList.add('active');
-        }else{
-            searchField.classList.remove('active');
-        }
-        active = !active;
+        searchField.classList.toggle('active');
     }
 
 
