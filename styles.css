@@ -412,7 +412,7 @@ span{
         visibility: hidden;
         top: 4.5rem;
         left: 0;
-        width: 98%;
+        width: 100%;
         padding: 1.4rem;
         opacity: 0;
         transition: opacity 200ms ease-in;
@@ -427,10 +427,6 @@ span{
     #home .container header #searchFieldContainer #searchButton {
         background-color: transparent;
         cursor: pointer;
-    }
-
-    #searchField.active + #searchButton svg path{
-        stroke: var(--light-purple);
     }
 
     #home .container header #searchFieldContainer #searchButton svg path{
