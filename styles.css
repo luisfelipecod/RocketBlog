@@ -323,12 +323,11 @@ span{
     #home .container header #mobileMenuIcons{
         display: flex;
         align-items: center;
-        margin-right: 1rem;
     }
     
     #home .container header #mobileMenuIcons svg{
-        width: 2.4rem;
-        height: 2.4rem;
+        width: 2.8rem;
+        height: 2.8rem;
         cursor: pointer;
     }
     
@@ -428,6 +427,10 @@ span{
     #home .container header #searchFieldContainer #searchButton {
         background-color: transparent;
         cursor: pointer;
+    }
+
+    #searchField.active + #searchButton svg path{
+        stroke: var(--light-purple);
     }
 
     #home .container header #searchFieldContainer #searchButton svg path{
