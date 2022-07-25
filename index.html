@@ -176,17 +176,17 @@
 
 <script>
     function openMenu() {
+        searchField.classList.remove('active');
         mobileMenuIcons.classList.add('iconMenuOpen');
         menuNavigation.classList.add('menuOpen');
-        searchField.classList.remove('active');
+        document.body.style.overflow = "hidden";
     }
 
     function closeMenu() {
         mobileMenuIcons.classList.remove('iconMenuOpen');
         menuNavigation.classList.remove('menuOpen');
-    }
-
-    
+        document.body.style.overflow = "initial";
+    }    
 
     function showSearchInput(){
         searchField.classList.toggle('active');
