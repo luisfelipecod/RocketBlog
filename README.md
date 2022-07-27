@@ -14,4 +14,4 @@ Desenvolver uma Homepage para um blog.
  </ul>
  
 ## Fonte do Layout
- [Template RockeatBlog](https://www.figma.com/file/r4CsL6MPTAvE7EvJXjhFK4/DD-RocketBlog/duplicate){:target="_blank"}
+ <a href="http://example.com/](https://www.figma.com/file/r4CsL6MPTAvE7EvJXjhFK4/DD-RocketBlog/duplicate)" target="_blank">Template RockeatBlog</a>
