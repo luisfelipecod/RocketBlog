@@ -144,6 +144,10 @@ span{
     cursor: pointer;
 }
 
+#home .container header #searchFieldContainer #searchButton svg path{
+    stroke: var(--white);
+}
+
 #home .container header #mobileMenuIcons{
     display: none;
 }
